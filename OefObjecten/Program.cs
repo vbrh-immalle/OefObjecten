@@ -27,6 +27,8 @@ namespace OefObjecten
             {
                 Console.WriteLine(p.Naam + " is " + p.Leeftijd);
             }
+
+            MyHtmlWriter.WritePersoonListToFile("personen.html", personen);
         }
     }
 }

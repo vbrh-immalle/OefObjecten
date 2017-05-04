@@ -10,5 +10,16 @@ namespace OefObjecten
     {
         public string Naam { get; set; }
         public int Leeftijd { get; set; }
+
+        public Persoon()
+        {
+
+        }
+
+        public Persoon(string naam, int leeftijd)
+        {
+            Naam = naam;
+            Leeftijd = leeftijd;
+        }
     }
 }

@@ -9,8 +9,16 @@ mieke;15
 
 var personen = [];
 
-personen.push({ naam: "joske", leeftijd: 13 });
-personen.push({ naam: "jantje", leeftijd: 14 });
-personen.push({ naam: "mieke", leeftijd: 15 });
+var p1 = {};
+p1.naam = "joske";
+p1.leeftijd = 13;
+personen[0] = p1;
 
-personen.forEach(p => console.log(p.naam + " is " + p.leeftijd));
+personen.push({ naam: "jantje", leeftijd: 14 });
+
+var p3 = { naam: "mieke", leeftijd: 15 };
+personen.push(p3);
+
+personen.forEach(function (p) {
+    console.log(p.naam + " is " + p.leeftijd)
+});
